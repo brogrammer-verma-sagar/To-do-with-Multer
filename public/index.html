@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+ <style>
+  
+ </style>
+
+</head>
+
+<body>
+  <div class="inputTaskDiv">
+   
+    <form action="/sendTask" method="post" enctype="multipart/form-data">
+      <input type="text" name="task" id="task" placeholder="enter your task">
+      <label for="">Add image</label>
+      <input type="file" name="image" id="image">
+      <button type="submit" id="savetask">save Task</button>
+    </form>
+
+
+     
+    <button type="submit" id="showtask">show task</button>
+  
+  </div>
+
+
+  <div id="taskList">
+    <!-- Duynamically added items will be put here -->
+  </div>
+
+
+  <script src="client.js"></script>
+</body>
+
+</html>
